@@ -1,0 +1,8 @@
+AuthUserFile /usr/local/etc/httpd/htdocs/secretary/inauguration/FF_logs/.htpasswd
+AuthGroupFile /dev/null
+AuthName feedback-forms
+AuthType Basic
+
+<Limit GET>
+require user feedback
+</Limit>
